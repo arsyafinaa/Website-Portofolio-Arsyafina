@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="blue">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arsyafina Rachmanda Putri – Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style.js">
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+  <div class="container">
+    <!-- NAVBAR: Brand/Logo -->
+    <a class="navbar-brand fw-bold" href="#home" id="navbar-brand-text">ARSYAFINA</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <!-- NAVBAR: Navigation Links -->
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- NAVBAR: Theme Toggle Button -->
+      <button class="theme-toggle-btn ms-3" id="themeToggleBtn" title="Toggle Theme">
+        <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+
+     <!--HERO SECTION-->
+
+<section class="hero-section" id="home">
+  <div class="hero-bg-shapes">
+    <span class="shape shape-1"></span>
+    <span class="shape shape-2"></span>
+    <span class="shape shape-3"></span>
+  </div>
+
+  <!-- HERO: Floating Tech Icons (decorative) -->
+  <div class="floating-icons">
+    <span class="fi fi-js"><i class="bi bi-filetype-js"></i></span>
+    <span class="fi fi-css"><i class="bi bi-filetype-css"></i></span>
+    <span class="fi fi-html"><i class="bi bi-filetype-html"></i></span>
+    <span class="fi fi-gear"><i class="bi bi-gear-wide-connected"></i></span>
+    <span class="fi fi-hash"><i class="bi bi-hash"></i></span>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center pt-5">
+
+      <!-- HERO: Left Text Content -->
+      <div class="col-lg-7 hero-text-col">
+        <div class="hero-greeting-badge" data-aos="fade-right" data-aos-delay="100">
+          <i class="bi bi-hand-wave"></i> Hi, I'M
+        </div>
+
+        <h1 class="hero-title" data-aos="fade-right" data-aos-delay="200">
+          ARSYAFINA<br>
+          RACHMANDA<br>
+          <span class="hero-title-accent">PUTRI</span>
+        </h1>
+
+        <p class="hero-subtitle" data-aos="fade-right" data-aos-delay="350">
+          <i class="bi bi-code-slash me-2"></i>Frontend Developer &amp; Student
+        </p>
+
+        <!-- HERO: CTA Buttons -->
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="450">
+          <!-- HERO BUTTON: Hire Me -->
+          <a href="#contact" class="btn btn-hire">
+            <i class="bi bi-person-check-fill me-2"></i>HIRE ME
+          </a>
+          <!-- HERO BUTTON: Download CV -->
+          <a href="#" class="btn btn-cv">
+            <i class="bi bi-download me-2"></i>DOWNLOAD CV
+          </a>
+        </div>
+      </div>
+
+      <!-- HERO: Right Photo -->
+      <div class="col-lg-5 hero-photo-col text-center" data-aos="zoom-in" data-aos-delay="300">
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-frame">
+            <!-- HERO PHOTO:  -->
+            <img src="img/fto formal.jpeg" alt="Arsyafina Rachmanda Putri" class="hero-photo" id="hero-photo">
+          </div>
+          <div class="hero-photo-deco deco-1"></div>
+          <div class="hero-photo-deco deco-2"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HERO: Scroll Down Indicator -->
+  <a href="#about" class="scroll-down-btn">
+    <i class="bi bi-chevron-double-down"></i>
+  </a>
+</section>
+
+
+
+     <!--ABOUT SECTION-->
+
+<section class="about-section" id="about">
+  <div class="container">
+
+    <div class="section-title-wrap" data-aos="fade-up">
+      <h2 class="section-title">ABOUT <span class="accent-text">ME</span></h2>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="row align-items-center g-5">
+
+      <!-- ABOUT: Left Bio Text -->
+      <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
+        <!-- ABOUT: Intro paragraph – edit text here -->
+        <p class="about-intro-label">Hi!</p>
+        <p class="about-bio">
+          I'm Arsyafina, a Software Engineering student who loves trying new things and exploring creativity.
+          I'm interested in design and website development, especially creating simple, modern, and visually
+          comfortable interfaces using Figma, HTML, CSS, and JavaScript. For me, every learning process is an
+          opportunity to grow and discover new ideas. Besides that, I enjoy listening to music, enjoying calm
+          moments, and finding small things that can inspire my creativity.
+        </p>
+
+        <!-- ABOUT: Experience Button -->
+        <a href="https://sg.docworkspace.com/d/sbCaiqDlzTXxJWkm_b41y7whefkdy7c1a3c" class="btn btn-experience">
+          EXPERIENCE <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+
+        <!-- ABOUT: Stats Cards Row -->
+        <div class="row g-3 mt-4">
+
+          <!-- ABOUT STAT CARD 1: Location -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="about-stat-card" id="about-stat-location">
+              <div class="stat-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="stat-info">
+                <small class="stat-label">LOCATION</small>
+
+                <p class="stat-value">Tengaran, Semarang</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABOUT STAT CARD 2: Age -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
+            <div class="about-stat-card" id="about-stat-age">
+              <div class="stat-icon"><i class="bi bi-person-fill"></i></div>
+              <div class="stat-info">
+                <small class="stat-label">AGE</small>
+
+                <p class="stat-value">16 Years Old</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABOUT STAT CARD 3: School -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="350">
+            <div class="about-stat-card" id="about-stat-school">
+              <div class="stat-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div class="stat-info">
+                <small class="stat-label">SCHOOL</small>
+
+                <p class="stat-value">SMK N Tengaran</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ABOUT: Right Photo -->
+      <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
+        <div class="about-photo-wrapper">
+
+          <img src="img/fto formal.jpeg" alt="About Photo" class="about-photo">
+          <div class="about-photo-ring"></div>
+          <div class="about-photo-dots"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================
+     SKILLS SECTION
+========================= -->
+<section class="skills-section" id="skills">
+  <div class="container">
+
+    <!-- TITLE -->
+    <h2 class="section-title">
+      MY <span class="accent-text">SKILLS</span> :
+    </h2>
+
+    <!-- SKILLS ROW -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- HTML -->
+      <div class="col-6 col-md-2">
+        <div class="skill-card">
+          
+          <div class="skill-card-icon">
+            <i class="bi bi-filetype-html"></i>
+          </div>
+
+          <p class="skill-card-name">HTML</p>
+
+          <div class="skill-progress">
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" data-width="85"></div>
+            </div>
+
+            <div class="skill-percent">85%</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="col-6 col-md-2">
+        <div class="skill-card">
+
+          <div class="skill-card-icon">
+            <i class="bi bi-filetype-css"></i>
+          </div>
+
+          <p class="skill-card-name">CSS</p>
+
+          <div class="skill-progress">
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" data-width="45"></div>
+            </div>
+
+            <div class="skill-percent">45%</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- JS -->
+      <div class="col-6 col-md-2">
+        <div class="skill-card">
+
+          <div class="skill-card-icon">
+            <i class="bi bi-filetype-js"></i>
+          </div>
+
+          <p class="skill-card-name">JS</p>
+
+          <div class="skill-progress">
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" data-width="40"></div>
+            </div>
+
+            <div class="skill-percent">40%</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BOOTSTRAP -->
+      <div class="col-6 col-md-2">
+        <div class="skill-card">
+
+          <div class="skill-card-icon">
+            <i class="bi bi-bootstrap-fill"></i>
+          </div>
+
+          <p class="skill-card-name">BOOTSTRAP</p>
+
+          <div class="skill-progress">
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" data-width="75"></div>
+            </div>
+
+            <div class="skill-percent">75%</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FIGMA -->
+      <div class="col-6 col-md-2">
+        <div class="skill-card">
+
+          <div class="skill-card-icon">
+            <i class="bi bi-vector-pen"></i>
+          </div>
+
+          <p class="skill-card-name">FIGMA</p>
+
+          <div class="skill-progress">
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" data-width="65"></div>
+            </div>
+
+            <div class="skill-percent">65%</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+     <!--PROJECTS SECTION-->
+
+<section class="projects-section" id="projects">
+  <div class="container">
+
+    <div class="section-title-wrap" data-aos="fade-up">
+      <h2 class="section-title">LATEST <span class="accent-text">PROJECT</span></h2>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- PROJECT CARD 1: Sekolah -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card" id="project-card-sekolah">
+
+          <div class="project-card-img-wrap">
+            <img src="img/lp sekolah.jpeg" alt="Landing page Sekolah" class="project-card-img">
+            <div class="project-card-overlay">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+
+            <h5 class="project-card-title">Landing page Sekolah</h5>
+
+            <p class="project-card-desc">Website landing page modern untuk SMK Negeri Tengaran.</p>
+
+            <a href="https://arsyafinaa.github.io/Landing-Page-Sekolah/" class="btn btn-view-project">
+              <i class="bi bi-box-arrow-up-right me-2"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD 2: Environment -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card" id="project-card-environment">
+
+          <div class="project-card-img-wrap">
+            <img src="img/lp enviroment.jpeg" alt="Landing page Environment" class="project-card-img">
+            <div class="project-card-overlay">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+
+            <h5 class="project-card-title">Landing page Environment</h5>
+
+            <p class="project-card-desc">Edukasi untuk perubahan lingkungan yang lebih baik.</p>
+
+            <a href="https://arsyafinaa.github.io/Landing-Page-Environment/" class="btn btn-view-project">
+              <i class="bi bi-box-arrow-up-right me-2"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD 3: Fashion -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-card" id="project-card-fashion">
+
+          <div class="project-card-img-wrap">
+            <img src="img/lp fashion.jpeg" alt="Landing page Fashion" class="project-card-img">
+            <div class="project-card-overlay">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+
+            <h5 class="project-card-title">Landing page Fashion</h5>
+
+            <p class="project-card-desc">Website fashion modern dengan tampilan elegan dan stylish.</p>
+
+            <a href="https://arsyafinaa.github.io/Landing-Page-Fashion/" class="btn btn-view-project">
+              <i class="bi bi-box-arrow-up-right me-2"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD 4: Savanna -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-card" id="project-card-savanna">
+          
+          <div class="project-card-img-wrap">
+            <img src="img/lp savanna.jpeg" alt="Landing page Savanna" class="project-card-img">
+            <div class="project-card-overlay">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+
+            <h5 class="project-card-title">Landing page Savanna</h5>
+
+            <p class="project-card-desc">Limbahmu karyaku</p>
+
+            <a href="https://arsyafinaa.github.io/Website-Semester-1/" class="btn btn-view-project">
+              <i class="bi bi-box-arrow-up-right me-2"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARD 5: Kesehatan -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-card" id="project-card-kesehatan">
+
+          <div class="project-card-img-wrap">
+            <img src="img/lp kesehatan.jpeg" alt="Landing page Kesehatan" class="project-card-img">
+            <div class="project-card-overlay">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+
+            <h5 class="project-card-title">Landing page Kesehatan</h5>
+            
+            <p class="project-card-desc">Your Health, Our Priority – platform kesehatan digital.</p>
+
+            <a href="https://arsyafinaa.github.io/Landing-Page-Kedokteran/" class="btn btn-view-project">
+              <i class="bi bi-box-arrow-up-right me-2"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--CONTACT SECTION-->
+<section class="contact-section" id="contact">
+  <div class="container">
+
+    <div class="section-title-wrap" data-aos="fade-up">
+      <h2 class="section-title">GET IN <span class="accent-text">TOUCH</span></h2>
+      <div class="section-title-line"></div>
+    </div>
+
+    <div class="row g-5">
+
+      <!-- CONTACT: Left Info Column -->
+      <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+        <div class="contact-info-card" id="contact-info-card">
+          <h3 class="contact-info-title">Contact</h3>
+
+
+          <div class="contact-info-item" id="contact-instagram">
+            <div class="contact-info-icon"><i class="bi bi-instagram"></i></div>
+            <div>
+              <small class="contact-info-label">Instagram</small>
+              <p class="contact-info-value">
+                <a href="https://instagram.com/aarsyfnqqvz_" target="_blank">aarsyfnqqvz_</a>
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="contact-info-item" id="contact-phone">
+            <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <small class="contact-info-label">No Telp</small>
+              <p class="contact-info-value">085641295007</p>
+            </div>
+          </div>
+
+
+          <div class="contact-info-item" id="contact-email">
+            <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <small class="contact-info-label">Email</small>
+              <p class="contact-info-value">
+                <a href="mailto:arsyafina630@gmail.com">arsyafina630@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="contact-info-item" id="contact-github">
+            <div class="contact-info-icon"><i class="bi bi-github"></i></div>
+            <div>
+              <small class="contact-info-label">Git Hub</small>
+              <p class="contact-info-value">
+                <a href="https://github.com/arsyafinaa" target="_blank">arsyafinaa</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CONTACT: Right Message Form -->
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+        <div class="contact-form-card" id="contact-form-card">
+          <h3 class="contact-form-title">
+            <i class="bi bi-send-fill me-2"></i>Message
+          </h3>
+
+          <!-- CONTACT FORM: -->
+          <div class="mb-4" id="contact-form-name-field">
+            <label class="form-label contact-form-label">Name</label>
+            <input type="text" class="form-control contact-input" placeholder="Your full name">
+          </div>
+
+          <div class="mb-4" id="contact-form-email-field">
+            <label class="form-label contact-form-label">Email</label>
+            <input type="email" class="form-control contact-input" placeholder="your@email.com">
+          </div>
+
+          <div class="mb-4" id="contact-form-message-field">
+            <label class="form-label contact-form-label">Your Message</label>
+            <textarea class="form-control contact-input contact-textarea" rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <!-- CONTACT FORM: Submit button -->
+          <button class="btn btn-send-message w-100" id="contact-form-submit-btn">
+            <i class="bi bi-send-fill me-2"></i>Send Message
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--FOOTER-->
+<footer class="site-footer" id="footer">
+  <div class="container">
+
+    <!-- FOOTER: Navigation Links -->
+    <div class="footer-nav" id="footer-nav-links">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECT</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+
+    <!-- FOOTER: Email -->
+    <p class="footer-email" id="footer-email-text">arsyafina630@gmail.com</p>
+
+    <!-- FOOTER: Social Icons -->
+    <div class="footer-socials" id="footer-social-icons">
+      <!-- 
+      <a href="https://github.com/arsyafinaa" target="_blank" class="footer-social-icon" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.tiktok.com/@cyavina?_r=1&_t=ZS-96N3RO3zoBQ" target="_blank" class="footer-social-icon" title="TikTok">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      <a href="https://instagram.com/aarsyfnqqvz_" target="_blank" class="footer-social-icon" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a href="#contact" class="footer-social-icon" title="Person">
+        <i class="bi bi-person-circle"></i>
+      </a>
+  
+    </div>
+
+    <!-- FOOTER: Copyright -->
+    <p class="footer-copy" id="footer-copyright">
+      <i class="bi bi-c-circle me-1"></i>2026 ARSYAFINA. ALL RIGHTS RESERVED
+    </p>
+
+  </div>
+</footer>
+
+<!-- Back To Top Button -->
+<a href="#home" class="back-to-top" id="backToTop" title="Back to Top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+
+<!--SCRIPTS-->
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- External JS -->
+<script src="script.js"></script>
+</body>
+</html>
